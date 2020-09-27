@@ -32,12 +32,13 @@ a {
 
 /*------대문 이미지쪽 글자 색상 회색으로 변경 추가함.-------*/
 .font-secondary, h1{
+	/*색상변경   - 흰색이 제일 무난해보임. #fff*/
 	/* color : #6E6E6E !important; */
+	/*배달의 민족 주아체*/
 	font-family: 'Jua', sans-serif;
 }
 /*------대문 이미지쪽 글자 색상 회색으로 변경 추가함.-------*/
 
-/*배달의 민족 주아체  */
 /* .font-secondary, h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   font-family: "Oswald", arial, sans-serif; } */
