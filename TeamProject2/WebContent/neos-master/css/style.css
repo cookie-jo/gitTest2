@@ -30,9 +30,17 @@ a {
   a:hover {
     text-decoration: none; }
 
-.font-secondary, h1, h2, h3, h4, h5,
+/*------대문 이미지쪽 글자 색상 회색으로 변경 추가함.-------*/
+.font-secondary, h1{
+	/* color : #6E6E6E !important; */
+	font-family: 'Jua', sans-serif;
+}
+/*------대문 이미지쪽 글자 색상 회색으로 변경 추가함.-------*/
+
+/* .font-secondary, h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
-  font-family: "Oswald", arial, sans-serif; }
+  font-family: "Oswald", arial, sans-serif; } */
+  
 
 .text-black {
   color: #000 !important; }

@@ -3849,7 +3849,7 @@
 .icon-memory:before {
   content: "\e322";
 }
-.icon-menu:before {
+.icon-menu:before {  /*플래티콘 메뉴바는 이걸사용  */
   content: "\e5d2";
 }
 .icon-message:before {

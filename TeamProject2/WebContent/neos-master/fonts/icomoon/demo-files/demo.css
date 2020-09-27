@@ -35,7 +35,7 @@ input, fieldset {
   border: 0;
 }
 input {
-  color: inherit;
+  color: inherit; /*컬러상속..?*/
   line-height: 1.5;
   height: 1.5em;
   padding: .25em 0;
