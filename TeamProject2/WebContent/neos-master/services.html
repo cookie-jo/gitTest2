@@ -5,27 +5,34 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
-    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Work+Sans:300,400,700" rel="stylesheet">
+	<!-- 배달의 민족 주아체 적용 -->
+	<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Work+Sans:300,400,700" rel="stylesheet"> -->
+  
+   <!--아이콘을 여기서 하는 것 같음..?-->
     <link rel="stylesheet" href="fonts/icomoon/style.css">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">  
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/animate.css">    
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">    
     
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <!--여기에서 폰트, 플래티콘, 효과 링크걸고있음  -->
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css"> 
   
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/style.css">
+
     
   </head>
   <body>
-  
+
+ <!---------------------------------------------------------------------- 상단바 시작 ------------------------------------------------------------------------------------>  
   <div id="overlayer"></div>
   <div class="loader">
     <div class="spinner-border text-primary" role="status">
@@ -35,7 +42,6 @@
 
   <div class="site-wrap">
 
-    
 
     <div class="site-mobile-menu">
       <div class="site-mobile-menu-header">
@@ -53,7 +59,7 @@
         <div class="site-navbar bg-light">
           <div class="row align-items-center">
             <div class="col-2">
-              <h2 class="mb-0 site-logo"><a href="index.html" class="font-weight-bold text-uppercase">Neos</a></h2>
+              <h2 class="mb-0 site-logo"><a href="index.html" class="font-weight-bold text-uppercase"><img class = "brand_mark" src ="images/mark4.png"></a></h2> <!--좀더 예쁜 폰트 필요함-->
             </div>
             <div class="col-10">
               <nav class="site-navigation text-right" role="navigation">
@@ -61,28 +67,29 @@
                   <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
 
                   <ul class="site-menu js-clone-nav d-none d-lg-block">
-                    <li><a href="index.html">Home</a></li>
+                    <!-- <li class="active"><a href="index.html">홈 화면</a></li> -->
                     <li class="has-children">
-                      <a href="about.html">About</a>
                       <ul class="dropdown arrow-top">
-                        <li><a href="testimonials.html">Testimonials</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="why-choose-us.html">Why Choose Us</a></li>
                         <li class="has-children">
+                        
+              <!--------------------------- 서브메뉴의 서브메뉴라서 일단 주석처리 ------------------------
                           <a href="#">Sub Menus</a>
                           <ul class="dropdown">
-                            <li><a href="testimonials.html">Testimonials</a></li>
-                            <li><a href="gallery.html">Gallery</a></li>
-                            <li><a href="why-choose-us.html">Why Choose Us</a></li>
-                          </ul>
+                            <li><a href="testimonials.html">추천글</a></li>
+                            <li><a href="gallery.html">사진</a></li>
+                            <li><a href="why-choose-us.html">왜 차누인가?</a></li>
+                          </ul> 
+          ----------------------------------------------------------------------------------------->
+                          
                         </li>
                       </ul>
                     </li>
-                    <li class="active"><a href="services.html">Services</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="contact.html"><span class="d-inline-block bg-primary text-white btn btn-primary">Get Started</span></a></li>
+                    <li><a href="services.html">추천서비스</a></li>
+                    <li><a href="product.html">상품페이지</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">문의사항</a></li>
+                    <li><a href="test_2.jsp">            
+                    <span class="d-inline-block bg-primary text-white btn btn-primary">시작하기</span></a></li>
                   </ul>
                 </div>
               </nav>
@@ -91,16 +98,41 @@
         </div>
       </div>
     </div>
+    <!----------------------------------------------------------------------- 상단 메뉴바 ------------------------------------------------------------------------------->
+    
+    
+    
+    
+  <!---------------------------------------------------------------------대문사진   -------------------------------------------------------------------------------->
   
-    <div class="site-blocks-cover inner-page overlay" style="background-image: url(images/hero_2.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
-      <div class="row align-items-center justify-content-center">
-        <div class="col-md-5 text-center" data-aos="fade">
-          <h1 class="text-uppercase">Services</h1>
-          <span class="caption d-block text-white">Free Templates by<a href="#">Colorlib</a></span>
+    <div class="slide-one-item home-slider owl-carousel">
+      
+      <div class="site-blocks-cover inner-page overlay" style="background-image: url(images/head_image1.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-6 text-center" data-aos="fade">
+              <h1 class="font-secondary font-weight-bold text-uppercase">세상에서 가장 작은 찻집, 차누</h1>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>  
+      </div>  
 
+      <div class="site-blocks-cover inner-page overlay" style="background-image: url(images/tea2.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-7 text-center" data-aos="fade">
+              <h1 class="font-secondary font-weight-bold text-uppercase">세상에서 가장 작은 찻집, 차누</h1>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+
+<!---------------------------------------------------------------------대문사진   -------------------------------------------------------------------------------->
+	
+	
+	
+	
     <div class="slant-1"></div>
 
     
@@ -205,9 +237,11 @@
       </div>
     </div>
 
+<!---------------------------------------------------- 하 단 부  ----------------------------------------------------- -->
+<!-- 퀵메뉴바 패딩값 수정 -->
+
     <footer class="site-footer bg-dark">
       <div class="container">
-        
 
         <div class="row">
           <div class="col-md-4 mb-4 mb-md-0">
@@ -238,15 +272,7 @@
               </div>
             </div>
 
-            <div class="row mb-5">
-              <div class="col-md-12">
-              <h3 class="footer-heading mb-4 text-white">Stay up to date</h3>
-              <form action="#" class="d-flex footer-subscribe">
-                <input type="text" class="form-control rounded-0" placeholder="Enter your email">
-                <input type="submit" class="btn btn-primary rounded-0" value="Subscribe">
-              </form>
-            </div>
-            </div>
+            
           </div>
 
           
@@ -266,21 +292,11 @@
           </div>
           </div>
         </div>
-        <div class="row pt-5 mt-5 text-center">
-          <div class="col-md-12">
-            <p>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </p>
-
-            
-          </div>
-          
-        </div>
+        
       </div>
     </footer>
   </div>
+  
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>

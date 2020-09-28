@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="ko">
   <head>
@@ -88,8 +90,8 @@
                     <li><a href="product.html">상품페이지</a></li>
                     <li><a href="faq.html">FAQ</a></li>
                     <li><a href="contact.html">문의사항</a></li>
-                    <li><a href="login_join_page.jsp">            
-                    <span class="d-inline-block bg-primary text-white btn btn-primary">로그인</span></a></li>
+                    <li><a href="test_2.jsp">            
+                    <span class="d-inline-block bg-primary text-white btn btn-primary">시작하기</span></a></li>
                   </ul>
                 </div>
               </nav>
