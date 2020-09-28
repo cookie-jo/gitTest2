@@ -35,7 +35,9 @@ a {
 	/*색상변경   - 흰색이 제일 무난해보임. #fff*/
 	/* color : #6E6E6E !important; */
 	/*배달의 민족 주아체*/
-	font-family: 'Jua', sans-serif;
+	/* font-family: 'Jua', sans-serif; */
+	/* font-family: 'Single Day', cursive; */
+	font-family: 'Song Myung', serif;
 }
 /*------대문 이미지쪽 글자 색상 회색으로 변경 추가함.-------*/
 
