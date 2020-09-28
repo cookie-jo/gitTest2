@@ -485,7 +485,7 @@ input::placeholder {
       <div class="user_forms-login">
         <h2 class="forms_title">로그인</h2>
         
-        <form class="forms_form" action="../loginProgram">
+        <form class="forms_form" action="../member_login">
           <fieldset class="forms_fieldset">
             <div class="forms_field">
               <input type="text" placeholder="아이디를 입력하세요." name="id" class="forms_field-input" required autofocus />
@@ -511,7 +511,7 @@ input::placeholder {
         
         <!-- <form class="forms_form" name="form" id="form" method="post"> -->
         <!-- servlet이 실행됬을때는 webContent 바로 아래서 실행되기때문에 찾을라면 webContent까지 올라가야해요 -->
-        <form action = "../joinPragram" class="forms_form" name="form" id="form" method="post">
+        <form action = "../member_join" class="forms_form" name="form" id="form" method="post">
           <fieldset class="forms_fieldset">
             <div class="forms_field">
             <!-- <input type="text" placeholder="이름" class="forms_field-input" required /> -->
