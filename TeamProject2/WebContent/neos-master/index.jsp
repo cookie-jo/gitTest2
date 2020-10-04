@@ -86,11 +86,15 @@
                         </li>
                       </ul>
                     </li>
+                    <%
+                    	//로그인 되면  <li><a href="services.html">마이페이지</a></li> 추가
+                    %>
                     <li><a href="services.html">추천서비스</a></li>
-                    <li><a href="product.html">상품페이지</a></li>
+                    <li><a href="blog.html">상품페이지</a></li>
                     <li><a href="faq.html">FAQ</a></li>
                     <li><a href="contact.html">문의사항</a></li>
-                    <li><a href="test_2.jsp">            
+                    <li><a href="login_join_page.jsp">
+                    <% //로그인 되면 <span class="d-inline-block bg-primary text-white btn btn-primary">로그아웃</span></a></li>%>            
                     <span class="d-inline-block bg-primary text-white btn btn-primary">시작하기</span></a></li>
                   </ul>
                 </div>
