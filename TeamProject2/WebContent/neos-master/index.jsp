@@ -1,3 +1,5 @@
+<%@page import="com.model.memberDAO"%>
+<%@page import="com.controller.member_login"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -12,7 +14,6 @@
     <!-- <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Work+Sans:300,400,700" rel="stylesheet"> -->
   
    <!--아이콘을 여기서 하는 것 같음..?-->
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">  
     <link rel="stylesheet" href="css/magnific-popup.css">
@@ -33,7 +34,10 @@
     
   </head>
   <body>
-
+ <!---------------------------------------------------------------------- 전역변수 ------------------------------------------------------------------------------------>
+ <%
+ 	String name = (String)session.getAttribute("name");
+ %>
  <!---------------------------------------------------------------------- 상단바 시작 ------------------------------------------------------------------------------------>  
   <div id="overlayer"></div>
   <div class="loader">
@@ -86,16 +90,23 @@
                         </li>
                       </ul>
                     </li>
-                    <%
-                    	//로그인 되면  <li><a href="services.html">마이페이지</a></li> 추가
-                    %>
+                    <%System.out.println(name); %>
+                    <% if(name != null){ %>
+                   		<li><a href="services.html">마이페이지</a></li>
+                    <% } %>
+
                     <li><a href="services.html">추천서비스</a></li>
                     <li><a href="blog.html">상품페이지</a></li>
                     <li><a href="faq.html">FAQ</a></li>
                     <li><a href="contact.html">문의사항</a></li>
-                    <li><a href="login_join_page.jsp">
-                    <% //로그인 되면 <span class="d-inline-block bg-primary text-white btn btn-primary">로그아웃</span></a></li>%>            
-                    <span class="d-inline-block bg-primary text-white btn btn-primary">시작하기</span></a></li>
+                    <% if(name != null){ %>
+	                    <!--<span class="d-inline-block bg-primary text-white btn btn-primary">로그아웃</span></a></li> -->    
+	                    <li><a href="member_logout">
+	                    <span class="d-inline-block bg-primary text-white btn btn-primary">로그아웃</span></a></li>           
+                    <% }else{ %>
+                    	<li><a href="login_join_page.jsp">
+                    	<span class="d-inline-block bg-primary text-white btn btn-primary">시작하기</span></a></li>
+                    <% } %>
                   </ul>
                 </div>
               </nav>

@@ -39,13 +39,14 @@ public class member_login extends HttpServlet {
 		
 		// 로그인 성공, 실패
 		if (name != null) {
-			response.sendRedirect("login3.jsp?member_name=" + URLEncoder.encode(name, "UTF-8"));
-
+			//response.sendRedirect("index.jsp?member_name=" + URLEncoder.encode(name, "UTF-8"));
+			System.out.println("로그인 성공");
+			
 			HttpSession session = request.getSession();
 			session.setAttribute("name", name);
 		} else {
-			response.sendRedirect("login4.jsp");
+			System.out.println("로그인 실패");
 		}
-		response.sendRedirect("index.html");
+		response.sendRedirect("neos-master/index.jsp");
 	}
 }
