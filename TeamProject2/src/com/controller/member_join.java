@@ -39,9 +39,9 @@ public class member_join extends HttpServlet {
 		
 		// 성공, 실패
 		if (cnt > 0) {
-			response.sendRedirect("login1.jsp");
+			response.sendRedirect("neos-master/index.jsp");
 		} else {
-			response.sendRedirect("login2.jsp");
+			response.sendRedirect("neos-master/index.jsp");
 		}
 	}
 }

@@ -101,7 +101,7 @@
                     <li><a href="contact.html">문의사항</a></li>
                     <% if(name != null){ %>
 	                    <!--<span class="d-inline-block bg-primary text-white btn btn-primary">로그아웃</span></a></li> -->    
-	                    <li><a href="member_logout">
+	                    <li><a href="../member_logout">
 	                    <span class="d-inline-block bg-primary text-white btn btn-primary">로그아웃</span></a></li>           
                     <% }else{ %>
                     	<li><a href="login_join_page.jsp">
